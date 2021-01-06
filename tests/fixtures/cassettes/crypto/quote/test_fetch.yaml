@@ -1,0 +1,54 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.22.0
+    method: GET
+    uri: https://cloud.iexapis.com/stable/crypto/BTCUSD/quote
+  response:
+    body:
+      string: '{"symbol":"BTCUSD","primaryExchange":"","sector":"cryptocurrency","calculationPrice":"realtime","high":null,"low":null,"latestPrice":"34481.69","latestSource":"Real
+        time price","latestUpdate":1609906199697,"latestVolume":"0.02844988","previousClose":null}'
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept, Request-Source
+      Access-Control-Allow-Methods:
+      - GET, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 06 Jan 2021 04:10:02 GMT
+      Server:
+      - nginx
+      Set-Cookie:
+      - ctoken=7fe57f2ce68e4f60a1cf77b45b7b0a25; Max-Age=43200; Path=/; Expires=Wed,
+        06 Jan 2021 16:10:02 GMT
+      Strict-Transport-Security:
+      - max-age=15768000
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      content-length:
+      - '255'
+      iexcloud-messages-used:
+      - '2'
+      iexcloud-premium-messages-used:
+      - '0'
+    status:
+      code: 200
+      message: OK
+version: 1
