@@ -1,0 +1,54 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.22.0
+    method: GET
+    uri: https://cloud.iexapis.com/stable/stock/market/stats?symbols=aapl%2Cintc
+  response:
+    body:
+      string: '[{"companyName":"Apple Inc","marketcap":2200203196820,"week52high":136.69,"week52low":55.74,"week52change":0.7415282007528095,"sharesOutstanding":17001802000,"float":0,"avg10Volume":116880832,"avg30Volume":110115689,"day200MovingAvg":113.38,"day50MovingAvg":124.5,"employees":0,"ttmEPS":3.28,"ttmDividendRate":0.8052302508604918,"dividendYield":0.006222318606448434,"nextDividendDate":"","exDividendDate":"2020-11-06","nextEarningsDate":"","peRatio":38.32372187943077,"beta":1.1583148706741777,"maxChangePercent":48.5102915295738,"year5ChangePercent":4.303492903950264,"year2ChangePercent":2.574496529360259,"year1ChangePercent":0.7554068865232064,"ytdChangePercent":-0.02471927048006628,"month6ChangePercent":0.42667836731814,"month3ChangePercent":0.14699349614537138,"month1ChangePercent":0.0585685071574642,"day30ChangePercent":0.0585685071574642,"day5ChangePercent":-0.053259199648840405},{"companyName":"Intel
+        Corp.","marketcap":203547660000,"week52high":66.81,"week52low":43.74,"week52change":-0.15059169573842257,"sharesOutstanding":4098000000,"float":0,"avg10Volume":43573042,"avg30Volume":39388809,"day200MovingAvg":50.5,"day50MovingAvg":48.5,"employees":0,"ttmEPS":5.11,"ttmDividendRate":1.306603205179419,"dividendYield":0.02630568160216265,"nextDividendDate":"","exDividendDate":"2020-11-05","nextEarningsDate":"","peRatio":9.274509500159475,"beta":1.184434651052437,"maxChangePercent":2.539614896740447,"year5ChangePercent":0.6715013561808869,"year2ChangePercent":0.1049342756529612,"year1ChangePercent":-0.1529947017405643,"ytdChangePercent":-0.003010839020473721,"month6ChangePercent":-0.14812972713396333,"month3ChangePercent":-0.01918774448725058,"month1ChangePercent":-0.04453207656054625,"day30ChangePercent":-0.04453207656054625,"day5ChangePercent":0.05523688124070536}]'
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept, Request-Source
+      Access-Control-Allow-Methods:
+      - GET, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 06 Jan 2021 03:47:22 GMT
+      Server:
+      - nginx
+      Set-Cookie:
+      - ctoken=9787ee5ff9da4e0aa7d61bef33cbdaa7; Max-Age=43200; Path=/; Expires=Wed,
+        06 Jan 2021 15:47:22 GMT
+      Strict-Transport-Security:
+      - max-age=15768000
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      content-length:
+      - '1790'
+      iexcloud-messages-used:
+      - '10'
+      iexcloud-premium-messages-used:
+      - '0'
+    status:
+      code: 200
+      message: OK
+version: 1

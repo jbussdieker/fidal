@@ -1,0 +1,53 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.22.0
+    method: GET
+    uri: https://cloud.iexapis.com/stable/stock/market/income?symbols=aapl%2Cintc
+  response:
+    body:
+      string: '[{"symbol":"AAPL","income":[{"costOfRevenue":40009000000,"currency":"USD","ebit":14775000000,"filingType":"10-K","fiscalDate":"2020-09-26","fiscalQuarter":4,"fiscalYear":2020,"grossProfit":24689000000,"incomeTax":2228000000,"interestIncome":634000000,"minorityInterest":0,"netIncome":12673000000,"netIncomeBasic":12673000000,"operatingExpense":49923000000,"operatingIncome":14775000000,"otherIncomeExpenseNet":0,"pretaxIncome":14901000000,"reportDate":"2020-10-30","researchAndDevelopment":4978000000,"sellingGeneralAndAdmin":4936000000,"symbol":"AAPL","totalRevenue":64698000000,"id":"INCOME","key":"AAPL","subkey":"quarterly","date":1601078400000,"updated":1608330865000}]},{"symbol":"INTC","income":[{"costOfRevenue":8592000000,"currency":"USD","ebit":5034000000,"filingType":"10-Q","fiscalDate":"2020-09-26","fiscalQuarter":3,"fiscalYear":2020,"grossProfit":9741000000,"incomeTax":765000000,"interestIncome":107000000,"minorityInterest":0,"netIncome":4276000000,"netIncomeBasic":4276000000,"operatingExpense":13299000000,"operatingIncome":5034000000,"otherIncomeExpenseNet":0,"pretaxIncome":5041000000,"reportDate":"2020-10-23","researchAndDevelopment":3272000000,"sellingGeneralAndAdmin":1435000000,"symbol":"INTC","totalRevenue":18333000000,"id":"INCOME","key":"INTC","subkey":"quarterly","date":1601078400000,"updated":1608330865000}]}]'
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept, Request-Source
+      Access-Control-Allow-Methods:
+      - GET, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 06 Jan 2021 03:47:21 GMT
+      Server:
+      - nginx
+      Set-Cookie:
+      - ctoken=0246b1ea2fcf4c708a3539464284d01a; Max-Age=43200; Path=/; Expires=Wed,
+        06 Jan 2021 15:47:21 GMT
+      Strict-Transport-Security:
+      - max-age=15768000
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      content-length:
+      - '1343'
+      iexcloud-messages-used:
+      - '2000'
+      iexcloud-premium-messages-used:
+      - '0'
+    status:
+      code: 200
+      message: OK
+version: 1
