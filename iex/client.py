@@ -20,13 +20,11 @@ class Client:
         msg = "N/A"
         if key in response.headers:
             msg = response.headers[key]
-        logging.warning("MESSAGES USED: %s" % msg)
+        logging.debug("MESSAGES USED: %s" % msg)
 
     def _validate_response(self, response):
         if response.status_code != requests.codes.ok:
             raise Exception("Error Response")
-        if response.text == "Unknown symbol":
-            raise Exception("Unknown symbol")
 
     def request(self, endpoint, params={}):
         params.update({"token": self.token})
@@ -34,9 +32,4 @@ class Client:
         response = self.session.get(url=url, params=params)
         self._log_messages(response)
         self._validate_response(response)
-        json_response = response.json(
-            parse_int=None, parse_float=None
-        )
-        if isinstance(json_response, str) and ("Error Message" in json_response):
-            raise Exception("Error Message")
-        return json_response
+        return response.json()
