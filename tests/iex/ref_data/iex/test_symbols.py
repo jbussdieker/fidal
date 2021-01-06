@@ -11,5 +11,5 @@ class TestIEXRefDataIEXSymbols(unittest.TestCase):
     def test_fetch(self):
         with patch('logging.debug') as mock_logging:
             resp = fetch()
-            self.assertEqual(len(resp), 9546)
+            self.assertEqual(len(resp), 9552)
             mock_logging.assert_called_once_with("MESSAGES USED: 0")

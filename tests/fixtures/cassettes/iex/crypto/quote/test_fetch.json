@@ -1,0 +1,82 @@
+{
+    "version": 1,
+    "interactions": [
+        {
+            "request": {
+                "method": "GET",
+                "uri": "https://cloud.iexapis.com/stable/crypto/BTCUSD/quote",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.25.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Access-Control-Allow-Headers": [
+                        "Origin, X-Requested-With, Content-Type, Accept, Request-Source"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Access-Control-Allow-Credentials": [
+                        "true"
+                    ],
+                    "Content-Type": [
+                        "application/json; charset=utf-8"
+                    ],
+                    "Date": [
+                        "Wed, 06 Jan 2021 22:14:08 GMT"
+                    ],
+                    "Strict-Transport-Security": [
+                        "max-age=15768000"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ],
+                    "Access-Control-Allow-Methods": [
+                        "GET, OPTIONS"
+                    ],
+                    "iexcloud-messages-used": [
+                        "2"
+                    ],
+                    "Set-Cookie": [
+                        "ctoken=3b72ff96eb974617b4275a6772e17eb6; Max-Age=43200; Path=/; Expires=Thu, 07 Jan 2021 10:14:08 GMT"
+                    ],
+                    "iexcloud-premium-messages-used": [
+                        "0"
+                    ],
+                    "Transfer-Encoding": [
+                        "chunked"
+                    ],
+                    "Access-Control-Allow-Origin": [
+                        "*"
+                    ],
+                    "Server": [
+                        "nginx"
+                    ],
+                    "content-length": [
+                        "255"
+                    ]
+                },
+                "body": {
+                    "string": "{\"symbol\":\"BTCUSD\",\"primaryExchange\":\"\",\"sector\":\"cryptocurrency\",\"calculationPrice\":\"realtime\",\"high\":null,\"low\":null,\"latestPrice\":\"36195.85\",\"latestSource\":\"Real time price\",\"latestUpdate\":1609971248513,\"latestVolume\":\"0.00541581\",\"previousClose\":null}"
+                }
+            }
+        }
+    ]
+}

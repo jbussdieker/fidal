@@ -1,0 +1,82 @@
+{
+    "version": 1,
+    "interactions": [
+        {
+            "request": {
+                "method": "GET",
+                "uri": "https://cloud.iexapis.com/stable/stock/market/balance-sheet?symbols=aapl%2Cintc",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.25.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Access-Control-Allow-Headers": [
+                        "Origin, X-Requested-With, Content-Type, Accept, Request-Source"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Access-Control-Allow-Credentials": [
+                        "true"
+                    ],
+                    "Content-Type": [
+                        "application/json; charset=utf-8"
+                    ],
+                    "Date": [
+                        "Wed, 06 Jan 2021 22:14:13 GMT"
+                    ],
+                    "Strict-Transport-Security": [
+                        "max-age=15768000"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ],
+                    "Access-Control-Allow-Methods": [
+                        "GET, OPTIONS"
+                    ],
+                    "iexcloud-messages-used": [
+                        "6000"
+                    ],
+                    "Set-Cookie": [
+                        "ctoken=e556576bbc344fd28bca017cd11eb45a; Max-Age=43200; Path=/; Expires=Thu, 07 Jan 2021 10:14:13 GMT"
+                    ],
+                    "iexcloud-premium-messages-used": [
+                        "0"
+                    ],
+                    "Transfer-Encoding": [
+                        "chunked"
+                    ],
+                    "Access-Control-Allow-Origin": [
+                        "*"
+                    ],
+                    "Server": [
+                        "nginx"
+                    ],
+                    "content-length": [
+                        "2053"
+                    ]
+                },
+                "body": {
+                    "string": "[{\"symbol\":\"AAPL\",\"balancesheet\":[{\"accountsPayable\":42296000000,\"capitalSurplus\":null,\"commonStock\":50779000000,\"currency\":\"USD\",\"currentAssets\":143713000000,\"currentCash\":90943000000,\"currentLongTermDebt\":13769000000,\"filingType\":\"10-K\",\"fiscalDate\":\"2020-09-26\",\"fiscalQuarter\":4,\"fiscalYear\":2020,\"goodwill\":0,\"intangibleAssets\":0,\"inventory\":4061000000,\"longTermDebt\":98667000000,\"longTermInvestments\":180175000000,\"minorityInterest\":0,\"netTangibleAssets\":65339000000,\"otherAssets\":42522000000,\"otherCurrentAssets\":11264000000,\"otherCurrentLiabilities\":49327000000,\"otherLiabilities\":54490000000,\"propertyPlantEquipment\":36766000000,\"receivables\":37445000000,\"reportDate\":\"2020-10-30\",\"retainedEarnings\":14966000000,\"shareholderEquity\":65339000000,\"shortTermInvestments\":11264000000,\"symbol\":\"AAPL\",\"totalAssets\":323888000000,\"totalCurrentLiabilities\":105392000000,\"totalLiabilities\":258549000000,\"treasuryStock\":0,\"id\":\"BALANCE_SHEET\",\"key\":\"AAPL\",\"subkey\":\"quarterly\",\"date\":1601078400000,\"updated\":1608330865000}]},{\"symbol\":\"INTC\",\"balancesheet\":[{\"accountsPayable\":5159000000,\"capitalSurplus\":null,\"commonStock\":23335000000,\"currency\":\"USD\",\"currentAssets\":36785000000,\"currentCash\":18253000000,\"currentLongTermDebt\":504000000,\"filingType\":\"10-Q\",\"fiscalDate\":\"2020-09-26\",\"fiscalQuarter\":3,\"fiscalYear\":2020,\"goodwill\":26955000000,\"intangibleAssets\":9881000000,\"inventory\":9273000000,\"longTermDebt\":36059000000,\"longTermInvestments\":108476000000,\"minorityInterest\":0,\"netTangibleAssets\":37718000000,\"otherAssets\":6036000000,\"otherCurrentAssets\":2119000000,\"otherCurrentLiabilities\":16449000000,\"otherLiabilities\":9541000000,\"propertyPlantEquipment\":59205000000,\"receivables\":7140000000,\"reportDate\":\"2020-10-23\",\"retainedEarnings\":52159000000,\"shareholderEquity\":74554000000,\"shortTermInvestments\":2119000000,\"symbol\":\"INTC\",\"totalAssets\":145261000000,\"totalCurrentLiabilities\":22112000000,\"totalLiabilities\":70707000000,\"treasuryStock\":0,\"id\":\"BALANCE_SHEET\",\"key\":\"INTC\",\"subkey\":\"quarterly\",\"date\":1601078400000,\"updated\":1608330865000}]}]"
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,82 @@
+{
+    "version": 1,
+    "interactions": [
+        {
+            "request": {
+                "method": "GET",
+                "uri": "https://cloud.iexapis.com/stable/stock/market/advanced-stats?symbols=aapl%2Cintc",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.25.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Access-Control-Allow-Headers": [
+                        "Origin, X-Requested-With, Content-Type, Accept, Request-Source"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Access-Control-Allow-Credentials": [
+                        "true"
+                    ],
+                    "Content-Type": [
+                        "application/json; charset=utf-8"
+                    ],
+                    "Date": [
+                        "Wed, 06 Jan 2021 22:14:12 GMT"
+                    ],
+                    "Strict-Transport-Security": [
+                        "max-age=15768000"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ],
+                    "Access-Control-Allow-Methods": [
+                        "GET, OPTIONS"
+                    ],
+                    "iexcloud-messages-used": [
+                        "6010"
+                    ],
+                    "Set-Cookie": [
+                        "ctoken=ab7a38b2d8424b87b3a8092f019e5a5f; Max-Age=43200; Path=/; Expires=Thu, 07 Jan 2021 10:14:12 GMT"
+                    ],
+                    "iexcloud-premium-messages-used": [
+                        "0"
+                    ],
+                    "Transfer-Encoding": [
+                        "chunked"
+                    ],
+                    "Access-Control-Allow-Origin": [
+                        "*"
+                    ],
+                    "Server": [
+                        "nginx"
+                    ],
+                    "content-length": [
+                        "2984"
+                    ]
+                },
+                "body": {
+                    "string": "[{\"beta\":1.1583566703032044,\"totalCash\":90943000000,\"currentDebt\":105392000000,\"revenue\":274515000000,\"grossProfit\":104956000000,\"totalRevenue\":274515000000,\"EBITDA\":77344000000,\"revenuePerShare\":16.15,\"revenuePerEmployee\":2003759.12,\"debtToEquity\":4.957039440456695,\"profitMargin\":0.20913611278072236,\"enterpriseValue\":2248899080020,\"enterpriseValueToRevenue\":8.19,\"priceToSales\":8.11,\"priceToBook\":34.09,\"forwardPERatio\":32.9149656450769,\"pegRatio\":3.793505182365946,\"peHigh\":40.896082358164755,\"peLow\":16.509482543418486,\"week52highDate\":\"2020-12-28\",\"week52lowDate\":\"2020-03-23\",\"putCallRatio\":0.3237182372813606,\"companyName\":\"Apple Inc\",\"marketcap\":2227406080020,\"week52high\":136.69,\"week52low\":55.74,\"week52change\":0.7713916396696539,\"sharesOutstanding\":17001802000,\"float\":null,\"avg10Volume\":113678176,\"avg30Volume\":110692158,\"day200MovingAvg\":113.51,\"day50MovingAvg\":124.86,\"employees\":null,\"ttmEPS\":3.28,\"ttmDividendRate\":0.8052302508604918,\"dividendYield\":0.006146326622856971,\"nextDividendDate\":null,\"exDividendDate\":\"2020-11-06\",\"nextEarningsDate\":null,\"peRatio\":38.79754890212676,\"maxChangePercent\":49.12242711760655,\"year5ChangePercent\":4.507051430252842,\"year2ChangePercent\":2.618690907282957,\"year1ChangePercent\":0.7771103948953348,\"ytdChangePercent\":-0.012661089758082777,\"month6ChangePercent\":0.4443175403937063,\"month3ChangePercent\":0.12648904465543231,\"month1ChangePercent\":0.0716564417177914,\"day30ChangePercent\":0.0716564417177914,\"day5ChangePercent\":-0.02862015273967533},{\"beta\":1.1846681488238782,\"totalCash\":18253000000,\"currentDebt\":22112000000,\"revenue\":78098000000,\"grossProfit\":44142000000,\"totalRevenue\":78098000000,\"EBITDA\":24892000000,\"revenuePerShare\":19.06,\"revenuePerEmployee\":704855.6,\"debtToEquity\":1.9483998175818869,\"profitMargin\":0.28101872006965606,\"enterpriseValue\":225709780000,\"enterpriseValueToRevenue\":2.89,\"priceToSales\":2.66,\"priceToBook\":2.78,\"forwardPERatio\":10.388161366368415,\"pegRatio\":0.476462564074243,\"peHigh\":13.073636205403925,\"peLow\":8.559755524673072,\"week52highDate\":\"2020-01-24\",\"week52lowDate\":\"2020-03-16\",\"putCallRatio\":0.4334910769475051,\"companyName\":\"Intel Corp.\",\"marketcap\":207399780000,\"week52high\":66.81,\"week52low\":43.74,\"week52change\":-0.1198291484203533,\"sharesOutstanding\":4098000000,\"float\":null,\"avg10Volume\":40455296,\"avg30Volume\":38011244,\"day200MovingAvg\":50.5,\"day50MovingAvg\":48.66,\"employees\":null,\"ttmEPS\":5.11,\"ttmDividendRate\":1.306603205179419,\"dividendYield\":0.02581709553802448,\"nextDividendDate\":null,\"exDividendDate\":\"2020-11-05\",\"nextEarningsDate\":null,\"peRatio\":9.450028705517838,\"maxChangePercent\":2.6066017701637616,\"year5ChangePercent\":0.71119053012757,\"year2ChangePercent\":0.12584505115354072,\"year1ChangePercent\":-0.13696520747110852,\"ytdChangePercent\":0.01585708550782816,\"month6ChangePercent\":-0.13200816368532087,\"month3ChangePercent\":-0.013771345390486855,\"month1ChangePercent\":-0.026449937481966,\"day30ChangePercent\":-0.026449937481966,\"day5ChangePercent\":0.024701356549908793}]"
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "version": 1,
+    "interactions": [
+        {
+            "request": {
+                "method": "GET",
+                "uri": "https://paper-api.alpaca.markets/v2/foo/bar",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.25.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 404,
+                    "message": "Not Found"
+                },
+                "headers": {
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Content-Type": [
+                        "text/plain; charset=utf-8"
+                    ],
+                    "Date": [
+                        "Wed, 06 Jan 2021 22:14:06 GMT"
+                    ],
+                    "Content-Length": [
+                        "9"
+                    ],
+                    "Server": [
+                        "nginx/1.16.1"
+                    ]
+                },
+                "body": {
+                    "string": "Not Found"
+                }
+            }
+        }
+    ]
+}

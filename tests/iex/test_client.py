@@ -14,7 +14,7 @@ class TestIEXClient(unittest.TestCase):
     def test_request(self):
         with patch('logging.debug') as mock_logging:
             resp = self.client.request("ref-data/iex/symbols")
-            self.assertEqual(len(resp), 9546)
+            self.assertEqual(len(resp), 9552)
             mock_logging.assert_called_once_with("MESSAGES USED: 0")
 
     @vcr.use_cassette()

@@ -9,4 +9,4 @@ class TestAlpacaAssets(unittest.TestCase):
     @vcr.use_cassette()
     def test_fetch(self):
         resp = fetch()
-        self.assertEqual(len(resp), 10704)
+        self.assertEqual(len(resp), 10709)

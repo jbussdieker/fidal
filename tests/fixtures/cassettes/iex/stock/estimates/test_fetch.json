@@ -1,0 +1,82 @@
+{
+    "version": 1,
+    "interactions": [
+        {
+            "request": {
+                "method": "GET",
+                "uri": "https://cloud.iexapis.com/stable/stock/market/estimates?symbols=aapl%2Cintc",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.25.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Access-Control-Allow-Headers": [
+                        "Origin, X-Requested-With, Content-Type, Accept, Request-Source"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Access-Control-Allow-Credentials": [
+                        "true"
+                    ],
+                    "Content-Type": [
+                        "application/json; charset=utf-8"
+                    ],
+                    "Date": [
+                        "Wed, 06 Jan 2021 22:14:15 GMT"
+                    ],
+                    "Strict-Transport-Security": [
+                        "max-age=15768000"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ],
+                    "Access-Control-Allow-Methods": [
+                        "GET, OPTIONS"
+                    ],
+                    "iexcloud-messages-used": [
+                        "0"
+                    ],
+                    "Set-Cookie": [
+                        "ctoken=3ac5d5752d0a4fe19de2b624b554fabe; Max-Age=43200; Path=/; Expires=Thu, 07 Jan 2021 10:14:15 GMT"
+                    ],
+                    "iexcloud-premium-messages-used": [
+                        "20000"
+                    ],
+                    "Transfer-Encoding": [
+                        "chunked"
+                    ],
+                    "Access-Control-Allow-Origin": [
+                        "*"
+                    ],
+                    "Server": [
+                        "nginx"
+                    ],
+                    "content-length": [
+                        "657"
+                    ]
+                },
+                "body": {
+                    "string": "[{\"symbol\":\"AAPL\",\"estimates\":[{\"announceTime\":null,\"consensusEPS\":0.87,\"currency\":\"USD\",\"fiscalEndDate\":\"2021-03-31\",\"fiscalPeriod\":\"Q2 2021\",\"numberOfEstimates\":28,\"periodType\":\"quarterly\",\"reportDate\":null,\"symbol\":\"AAPL\",\"id\":\"PREMIUM_ESTIMATES\",\"key\":\"AAPL\",\"subkey\":\"Q22021\",\"date\":1617148800000,\"updated\":1609300812000}]},{\"symbol\":\"INTC\",\"estimates\":[{\"announceTime\":null,\"consensusEPS\":0.96,\"currency\":\"USD\",\"fiscalEndDate\":\"2021-03-31\",\"fiscalPeriod\":\"Q1 2021\",\"numberOfEstimates\":22,\"periodType\":\"quarterly\",\"reportDate\":null,\"symbol\":\"INTC\",\"id\":\"PREMIUM_ESTIMATES\",\"key\":\"INTC\",\"subkey\":\"Q12021\",\"date\":1617148800000,\"updated\":1609905696000}]}]"
+                }
+            }
+        }
+    ]
+}

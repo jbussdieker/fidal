@@ -1,0 +1,82 @@
+{
+    "version": 1,
+    "interactions": [
+        {
+            "request": {
+                "method": "GET",
+                "uri": "https://cloud.iexapis.com/stable/stock/market/income?symbols=aapl%2Cintc",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.25.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Access-Control-Allow-Headers": [
+                        "Origin, X-Requested-With, Content-Type, Accept, Request-Source"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Access-Control-Allow-Credentials": [
+                        "true"
+                    ],
+                    "Content-Type": [
+                        "application/json; charset=utf-8"
+                    ],
+                    "Date": [
+                        "Wed, 06 Jan 2021 22:14:16 GMT"
+                    ],
+                    "Strict-Transport-Security": [
+                        "max-age=15768000"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ],
+                    "Access-Control-Allow-Methods": [
+                        "GET, OPTIONS"
+                    ],
+                    "iexcloud-messages-used": [
+                        "2000"
+                    ],
+                    "Set-Cookie": [
+                        "ctoken=3881ebf464c440afb39f4cc2512365b6; Max-Age=43200; Path=/; Expires=Thu, 07 Jan 2021 10:14:16 GMT"
+                    ],
+                    "iexcloud-premium-messages-used": [
+                        "0"
+                    ],
+                    "Transfer-Encoding": [
+                        "chunked"
+                    ],
+                    "Access-Control-Allow-Origin": [
+                        "*"
+                    ],
+                    "Server": [
+                        "nginx"
+                    ],
+                    "content-length": [
+                        "1343"
+                    ]
+                },
+                "body": {
+                    "string": "[{\"symbol\":\"AAPL\",\"income\":[{\"costOfRevenue\":40009000000,\"currency\":\"USD\",\"ebit\":14775000000,\"filingType\":\"10-K\",\"fiscalDate\":\"2020-09-26\",\"fiscalQuarter\":4,\"fiscalYear\":2020,\"grossProfit\":24689000000,\"incomeTax\":2228000000,\"interestIncome\":634000000,\"minorityInterest\":0,\"netIncome\":12673000000,\"netIncomeBasic\":12673000000,\"operatingExpense\":49923000000,\"operatingIncome\":14775000000,\"otherIncomeExpenseNet\":0,\"pretaxIncome\":14901000000,\"reportDate\":\"2020-10-30\",\"researchAndDevelopment\":4978000000,\"sellingGeneralAndAdmin\":4936000000,\"symbol\":\"AAPL\",\"totalRevenue\":64698000000,\"id\":\"INCOME\",\"key\":\"AAPL\",\"subkey\":\"quarterly\",\"date\":1601078400000,\"updated\":1608330865000}]},{\"symbol\":\"INTC\",\"income\":[{\"costOfRevenue\":8592000000,\"currency\":\"USD\",\"ebit\":5034000000,\"filingType\":\"10-Q\",\"fiscalDate\":\"2020-09-26\",\"fiscalQuarter\":3,\"fiscalYear\":2020,\"grossProfit\":9741000000,\"incomeTax\":765000000,\"interestIncome\":107000000,\"minorityInterest\":0,\"netIncome\":4276000000,\"netIncomeBasic\":4276000000,\"operatingExpense\":13299000000,\"operatingIncome\":5034000000,\"otherIncomeExpenseNet\":0,\"pretaxIncome\":5041000000,\"reportDate\":\"2020-10-23\",\"researchAndDevelopment\":3272000000,\"sellingGeneralAndAdmin\":1435000000,\"symbol\":\"INTC\",\"totalRevenue\":18333000000,\"id\":\"INCOME\",\"key\":\"INTC\",\"subkey\":\"quarterly\",\"date\":1601078400000,\"updated\":1608330865000}]}]"
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,82 @@
+{
+    "version": 1,
+    "interactions": [
+        {
+            "request": {
+                "method": "GET",
+                "uri": "https://cloud.iexapis.com/stable/stock/market/cash-flow?symbols=aapl%2Cintc",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.25.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Access-Control-Allow-Headers": [
+                        "Origin, X-Requested-With, Content-Type, Accept, Request-Source"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Access-Control-Allow-Credentials": [
+                        "true"
+                    ],
+                    "Content-Type": [
+                        "application/json; charset=utf-8"
+                    ],
+                    "Date": [
+                        "Wed, 06 Jan 2021 22:14:13 GMT"
+                    ],
+                    "Strict-Transport-Security": [
+                        "max-age=15768000"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ],
+                    "Access-Control-Allow-Methods": [
+                        "GET, OPTIONS"
+                    ],
+                    "iexcloud-messages-used": [
+                        "2000"
+                    ],
+                    "Set-Cookie": [
+                        "ctoken=ec5ffd88bcc44428aaa5eefac5513571; Max-Age=43200; Path=/; Expires=Thu, 07 Jan 2021 10:14:13 GMT"
+                    ],
+                    "iexcloud-premium-messages-used": [
+                        "0"
+                    ],
+                    "Transfer-Encoding": [
+                        "chunked"
+                    ],
+                    "Access-Control-Allow-Origin": [
+                        "*"
+                    ],
+                    "Server": [
+                        "nginx"
+                    ],
+                    "content-length": [
+                        "1392"
+                    ]
+                },
+                "body": {
+                    "string": "[{\"symbol\":\"AAPL\",\"cashflow\":[{\"capitalExpenditures\":-7309000000,\"cashChange\":-2082000000,\"cashFlow\":80674000000,\"cashFlowFinancing\":-86820000000,\"changesInInventories\":83000000,\"changesInReceivables\":5370000000,\"currency\":\"USD\",\"depreciation\":11056000000,\"dividendsPaid\":null,\"exchangeRateEffect\":null,\"filingType\":\"10-K\",\"fiscalDate\":\"2020-09-26\",\"fiscalQuarter\":4,\"fiscalYear\":2020,\"investingActivityOther\":null,\"investments\":null,\"netBorrowings\":10229000000,\"netIncome\":12673000000,\"otherFinancingCashFlows\":null,\"reportDate\":\"2020-10-30\",\"symbol\":\"AAPL\",\"totalInvestingCashFlows\":-4289000000,\"id\":\"CASH_FLOW\",\"key\":\"AAPL\",\"subkey\":\"quarterly\",\"date\":1601078400000,\"updated\":1608330864000}]},{\"symbol\":\"INTC\",\"cashflow\":[{\"capitalExpenditures\":-10392000000,\"cashChange\":-7562000000,\"cashFlow\":25494000000,\"cashFlowFinancing\":-11220000000,\"changesInInventories\":304000000,\"changesInReceivables\":-301000000,\"currency\":\"USD\",\"depreciation\":9236000000,\"dividendsPaid\":null,\"exchangeRateEffect\":null,\"filingType\":\"10-Q\",\"fiscalDate\":\"2020-09-26\",\"fiscalQuarter\":3,\"fiscalYear\":2020,\"investingActivityOther\":null,\"investments\":null,\"netBorrowings\":16191000000,\"netIncome\":4276000000,\"otherFinancingCashFlows\":null,\"reportDate\":\"2020-10-23\",\"symbol\":\"INTC\",\"totalInvestingCashFlows\":-15112000000,\"id\":\"CASH_FLOW\",\"key\":\"INTC\",\"subkey\":\"quarterly\",\"date\":1601078400000,\"updated\":1608330864000}]}]"
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,58 @@
+{
+    "version": 1,
+    "interactions": [
+        {
+            "request": {
+                "method": "GET",
+                "uri": "https://api.polygon.io/v2/reference/markets",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.25.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Date": [
+                        "Wed, 06 Jan 2021 22:14:22 GMT"
+                    ],
+                    "Strict-Transport-Security": [
+                        "max-age=15724800; includeSubDomains"
+                    ],
+                    "X-Request-Id": [
+                        "9e81ff8d3e393259d017c3082e0372f3"
+                    ],
+                    "content-length": [
+                        "316"
+                    ],
+                    "Server": [
+                        "nginx/1.19.2"
+                    ]
+                },
+                "body": {
+                    "string": "{\"status\":\"OK\",\"results\":[{\"market\":\"STOCKS\",\"desc\":\"Stocks / Equities / ETFs\"},{\"market\":\"INDICES\",\"desc\":\"Indices\"},{\"market\":\"MF\",\"desc\":\"Mutual Funds\"},{\"market\":\"MMF\",\"desc\":\"Money Market Funds\"},{\"market\":\"CRYPTO\",\"desc\":\"Crypto\"},{\"market\":\"FX\",\"desc\":\"Forex / Currencies\"},{\"market\":\"BONDS\",\"desc\":\"Bonds\"}]}"
+                }
+            }
+        }
+    ]
+}

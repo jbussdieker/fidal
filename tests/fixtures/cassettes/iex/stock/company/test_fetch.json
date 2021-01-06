@@ -1,0 +1,82 @@
+{
+    "version": 1,
+    "interactions": [
+        {
+            "request": {
+                "method": "GET",
+                "uri": "https://cloud.iexapis.com/stable/stock/market/company?symbols=aapl%2Cintc",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.25.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Access-Control-Allow-Headers": [
+                        "Origin, X-Requested-With, Content-Type, Accept, Request-Source"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Access-Control-Allow-Credentials": [
+                        "true"
+                    ],
+                    "Content-Type": [
+                        "application/json; charset=utf-8"
+                    ],
+                    "Date": [
+                        "Wed, 06 Jan 2021 22:14:14 GMT"
+                    ],
+                    "Strict-Transport-Security": [
+                        "max-age=15768000"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ],
+                    "Access-Control-Allow-Methods": [
+                        "GET, OPTIONS"
+                    ],
+                    "iexcloud-messages-used": [
+                        "2"
+                    ],
+                    "Set-Cookie": [
+                        "ctoken=183197d544bd4f9ab196743862ac205e; Max-Age=43200; Path=/; Expires=Thu, 07 Jan 2021 10:14:14 GMT"
+                    ],
+                    "iexcloud-premium-messages-used": [
+                        "0"
+                    ],
+                    "Transfer-Encoding": [
+                        "chunked"
+                    ],
+                    "Access-Control-Allow-Origin": [
+                        "*"
+                    ],
+                    "Server": [
+                        "nginx"
+                    ],
+                    "content-length": [
+                        "1183"
+                    ]
+                },
+                "body": {
+                    "string": "[{\"symbol\":\"AAPL\",\"companyName\":\"Apple Inc\",\"exchange\":\"NASDAQ/NGS (GLOBAL SELECT MARKET)\",\"industry\":\"Electronic Computer Manufacturing \",\"website\":\"https://www.apple.com/\",\"description\":\"\",\"CEO\":\"Timothy Cook\",\"securityName\":\"Apple Inc\",\"issueType\":\"cs\",\"sector\":\"Manufacturing\",\"primarySicCode\":3571,\"employees\":null,\"tags\":[\"Electronic Technology\",\"Telecommunications Equipment\",\"Manufacturing\",\"Electronic Computer Manufacturing \"],\"address\":\"1 Apple Park Way\",\"address2\":null,\"state\":\"California\",\"city\":\"Cupertino\",\"zip\":\"95014-0642\",\"country\":\"US\",\"phone\":\"14089961010\"},{\"symbol\":\"INTC\",\"companyName\":\"Intel Corp.\",\"exchange\":\"NASDAQ/NGS (GLOBAL SELECT MARKET)\",\"industry\":\"Semiconductor and Related Device Manufacturing \",\"website\":\"https://www.intel.com/\",\"description\":\"\",\"CEO\":\"Robert Swan\",\"securityName\":\"Intel Corp.\",\"issueType\":\"cs\",\"sector\":\"Manufacturing\",\"primarySicCode\":3674,\"employees\":null,\"tags\":[\"Electronic Technology\",\"Semiconductors\",\"Manufacturing\",\"Semiconductor and Related Device Manufacturing \"],\"address\":\"2200 Mission College Blvd\",\"address2\":null,\"state\":\"California\",\"city\":\"Santa clara\",\"zip\":\"95054-1537\",\"country\":\"US\",\"phone\":\"14087658080\"}]"
+                }
+            }
+        }
+    ]
+}

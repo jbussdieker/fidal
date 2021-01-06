@@ -1,0 +1,82 @@
+{
+    "version": 1,
+    "interactions": [
+        {
+            "request": {
+                "method": "GET",
+                "uri": "https://cloud.iexapis.com/stable/stock/market/stats?symbols=aapl%2Cintc",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.25.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Access-Control-Allow-Headers": [
+                        "Origin, X-Requested-With, Content-Type, Accept, Request-Source"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Access-Control-Allow-Credentials": [
+                        "true"
+                    ],
+                    "Content-Type": [
+                        "application/json; charset=utf-8"
+                    ],
+                    "Date": [
+                        "Wed, 06 Jan 2021 22:14:17 GMT"
+                    ],
+                    "Strict-Transport-Security": [
+                        "max-age=15768000"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ],
+                    "Access-Control-Allow-Methods": [
+                        "GET, OPTIONS"
+                    ],
+                    "iexcloud-messages-used": [
+                        "10"
+                    ],
+                    "Set-Cookie": [
+                        "ctoken=dd6d5042a505468a97a4f7aa0bb6917c; Max-Age=43200; Path=/; Expires=Thu, 07 Jan 2021 10:14:17 GMT"
+                    ],
+                    "iexcloud-premium-messages-used": [
+                        "0"
+                    ],
+                    "Transfer-Encoding": [
+                        "chunked"
+                    ],
+                    "Access-Control-Allow-Origin": [
+                        "*"
+                    ],
+                    "Server": [
+                        "nginx"
+                    ],
+                    "content-length": [
+                        "1792"
+                    ]
+                },
+                "body": {
+                    "string": "[{\"companyName\":\"Apple Inc\",\"marketcap\":2227406080020,\"week52high\":136.69,\"week52low\":55.74,\"week52change\":0.7713916396696539,\"sharesOutstanding\":17001802000,\"float\":0,\"avg10Volume\":113678176,\"avg30Volume\":110692158,\"day200MovingAvg\":113.51,\"day50MovingAvg\":124.86,\"employees\":0,\"ttmEPS\":3.28,\"ttmDividendRate\":0.8052302508604918,\"dividendYield\":0.006146326622856971,\"nextDividendDate\":\"\",\"exDividendDate\":\"2020-11-06\",\"nextEarningsDate\":\"\",\"peRatio\":38.79754890212676,\"beta\":1.1583566703032044,\"maxChangePercent\":49.12242711760655,\"year5ChangePercent\":4.507051430252842,\"year2ChangePercent\":2.618690907282957,\"year1ChangePercent\":0.7771103948953348,\"ytdChangePercent\":-0.012661089758082777,\"month6ChangePercent\":0.4443175403937063,\"month3ChangePercent\":0.12648904465543231,\"month1ChangePercent\":0.0716564417177914,\"day30ChangePercent\":0.0716564417177914,\"day5ChangePercent\":-0.02862015273967533},{\"companyName\":\"Intel Corp.\",\"marketcap\":207399780000,\"week52high\":66.81,\"week52low\":43.74,\"week52change\":-0.1198291484203533,\"sharesOutstanding\":4098000000,\"float\":0,\"avg10Volume\":40455296,\"avg30Volume\":38011244,\"day200MovingAvg\":50.5,\"day50MovingAvg\":48.66,\"employees\":0,\"ttmEPS\":5.11,\"ttmDividendRate\":1.306603205179419,\"dividendYield\":0.02581709553802448,\"nextDividendDate\":\"\",\"exDividendDate\":\"2020-11-05\",\"nextEarningsDate\":\"\",\"peRatio\":9.450028705517838,\"beta\":1.1846681488238782,\"maxChangePercent\":2.6066017701637616,\"year5ChangePercent\":0.71119053012757,\"year2ChangePercent\":0.12584505115354072,\"year1ChangePercent\":-0.13696520747110852,\"ytdChangePercent\":0.01585708550782816,\"month6ChangePercent\":-0.13200816368532087,\"month3ChangePercent\":-0.013771345390486855,\"month1ChangePercent\":-0.026449937481966,\"day30ChangePercent\":-0.026449937481966,\"day5ChangePercent\":0.024701356549908793}]"
+                }
+            }
+        }
+    ]
+}

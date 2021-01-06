@@ -11,5 +11,5 @@ class TestIEXRefDataCryptoSymbols(unittest.TestCase):
     def test_fetch(self):
         with patch('logging.debug') as mock_logging:
             resp = fetch()
-            self.assertEqual(len(resp), 1249)
+            self.assertEqual(len(resp), 1251)
             mock_logging.assert_called_once_with("MESSAGES USED: 1")
