@@ -1,4 +1,4 @@
-from fin.polygon.client import Client
+from fidal.polygon.client import Client
 
 def fetch():
     return Client().request("reference/markets")

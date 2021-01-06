@@ -2,4 +2,4 @@ test:
 	python3 -m unittest discover
 
 coverage:
-	coverage run --source fin -m unittest discover; coverage report -m
+	coverage run --source fidal -m unittest discover; coverage report -m

@@ -4,7 +4,7 @@ import requests
 
 from unittest.mock import MagicMock, patch
 
-from fin.polygon.client import Client
+from fidal.polygon.client import Client
 
 iexvcr = vcr.VCR(path_transformer=vcr.VCR.ensure_suffix('.yaml'),
                  cassette_library_dir='tests/fixtures/cassettes/polygon',

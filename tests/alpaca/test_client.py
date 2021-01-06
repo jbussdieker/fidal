@@ -4,14 +4,14 @@ import requests
 
 from unittest.mock import MagicMock, patch
 
-from fin.alpaca.client import Client
+from fidal.alpaca.client import Client
 
 iexvcr = vcr.VCR(path_transformer=vcr.VCR.ensure_suffix('.yaml'),
                  cassette_library_dir='tests/fixtures/cassettes/alpaca',
                  decode_compressed_response=True,
                  filter_headers=['APCA-API-KEY-ID', 'APCA-API-SECRET-KEY'])
 
-class TestClient(unittest.TestCase):
+class TestAlpacaClient(unittest.TestCase):
     def setUp(self):
         self.client = Client()
 

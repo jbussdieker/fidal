@@ -4,14 +4,14 @@ import requests
 
 from unittest.mock import MagicMock, patch
 
-from fin.iex.client import Client
+from fidal.iex.client import Client
 
 iexvcr = vcr.VCR(path_transformer=vcr.VCR.ensure_suffix('.yaml'),
                  cassette_library_dir='tests/fixtures/cassettes/iex',
                  decode_compressed_response=True,
                  filter_query_parameters=['token'])
 
-class TestClient(unittest.TestCase):
+class TestIEXClient(unittest.TestCase):
     def setUp(self):
         self.client = Client()
 

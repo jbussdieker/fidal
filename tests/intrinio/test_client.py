@@ -4,7 +4,7 @@ import requests
 
 from unittest.mock import MagicMock, patch
 
-from fin.intrinio.client import Client
+from fidal.intrinio.client import Client
 
 iexvcr = vcr.VCR(path_transformer=vcr.VCR.ensure_suffix('.yaml'),
                  cassette_library_dir='tests/fixtures/cassettes/intrinio',

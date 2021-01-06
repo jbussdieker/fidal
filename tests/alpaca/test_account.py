@@ -4,7 +4,7 @@ import requests
 
 from unittest.mock import MagicMock, patch
 
-from fin.alpaca.account import fetch
+from fidal.alpaca.account import fetch
 
 iexvcr = vcr.VCR(path_transformer=vcr.VCR.ensure_suffix('.yaml'),
                  cassette_library_dir='tests/fixtures/cassettes/alpaca/account',
