@@ -15,4 +15,4 @@ class TestAlpacaAccount(unittest.TestCase):
     @iexvcr.use_cassette()
     def test_fetch(self):
         resp = fetch()
-        self.assertEqual(len(resp), 26)
+        self.assertEqual(len(resp), 15136)
