@@ -1,18 +1,13 @@
 import unittest
-import vcr
-import requests
-
 from unittest.mock import MagicMock, patch
 
+from tests.helper import get_vcr
 from fidal.iex.stock.stats import fetch
 
-iexvcr = vcr.VCR(path_transformer=vcr.VCR.ensure_suffix('.yaml'),
-                 cassette_library_dir='tests/fixtures/cassettes/iex/stock/stats',
-                 decode_compressed_response=True,
-                 filter_query_parameters=['token'])
+vcr = get_vcr('iex/stock/stats')
 
 class TestIEXStockStats(unittest.TestCase):
-    @iexvcr.use_cassette()
+    @vcr.use_cassette()
     def test_fetch(self):
         with patch('logging.debug') as mock_logging:
             resp = fetch("aapl,intc")
