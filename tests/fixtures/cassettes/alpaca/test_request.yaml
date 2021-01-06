@@ -1,0 +1,36 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.22.0
+    method: GET
+    uri: https://paper-api.alpaca.markets/v2/account
+  response:
+    body:
+      string: '{"id":"49123f5e-4b4c-4fe8-a68f-2d82dbbecb08","account_number":"OXVW72GKA30H","status":"ACTIVE","currency":"USD","buying_power":"100000","regt_buying_power":"100000","daytrading_buying_power":"0","cash":"100000","portfolio_value":"100000","pattern_day_trader":false,"trading_blocked":false,"transfers_blocked":false,"account_blocked":false,"created_at":"2019-06-01T00:36:47.246623Z","trade_suspended_by_user":false,"multiplier":"1","shorting_enabled":false,"equity":"100000","last_equity":"100000","long_market_value":"0","short_market_value":"0","initial_margin":"0","maintenance_margin":"0","last_maintenance_margin":"0","sma":"0","daytrade_count":0}'
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '651'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Wed, 06 Jan 2021 06:11:34 GMT
+      Server:
+      - nginx/1.16.1
+      Vary:
+      - Origin
+    status:
+      code: 200
+      message: OK
+version: 1
