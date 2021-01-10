@@ -1,0 +1,82 @@
+{
+    "version": 1,
+    "interactions": [
+        {
+            "request": {
+                "method": "GET",
+                "uri": "https://cloud.iexapis.com/stable/stock/market/splits/5y?symbols=aapl%2Cintc",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.25.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "iexcloud-messages-used": [
+                        "10"
+                    ],
+                    "Access-Control-Allow-Origin": [
+                        "*"
+                    ],
+                    "Access-Control-Allow-Methods": [
+                        "GET, OPTIONS"
+                    ],
+                    "Strict-Transport-Security": [
+                        "max-age=15768000"
+                    ],
+                    "iexcloud-premium-messages-used": [
+                        "0"
+                    ],
+                    "Set-Cookie": [
+                        "ctoken=4ea96c0405004224a673f179eb2d6941; Max-Age=43200; Path=/; Expires=Sun, 10 Jan 2021 20:00:45 GMT"
+                    ],
+                    "Access-Control-Allow-Credentials": [
+                        "true"
+                    ],
+                    "Access-Control-Allow-Headers": [
+                        "Origin, X-Requested-With, Content-Type, Accept, Request-Source"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ],
+                    "Content-Type": [
+                        "application/json; charset=utf-8"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Date": [
+                        "Sun, 10 Jan 2021 08:00:45 GMT"
+                    ],
+                    "Transfer-Encoding": [
+                        "chunked"
+                    ],
+                    "Server": [
+                        "nginx"
+                    ],
+                    "content-length": [
+                        "246"
+                    ]
+                },
+                "body": {
+                    "string": "[[{\"declaredDate\":null,\"description\":\"Ordinary Shares\",\"exDate\":\"2020-08-31\",\"fromFactor\":1,\"ratio\":0.25,\"refid\":6705964,\"symbol\":\"AAPL\",\"toFactor\":4,\"id\":\"SPLITS\",\"key\":\"AAPL\",\"subkey\":\"6705964\",\"date\":1598832000000,\"updated\":1608134910000}],[]]"
+                }
+            }
+        }
+    ]
+}
