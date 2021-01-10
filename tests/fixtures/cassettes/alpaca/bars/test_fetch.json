@@ -1,0 +1,61 @@
+{
+    "version": 1,
+    "interactions": [
+        {
+            "request": {
+                "method": "GET",
+                "uri": "https://data.alpaca.markets/v1/bars/day?limit=10&symbols=AAT",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.25.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Access-Control-Allow-Origin": [
+                        "*"
+                    ],
+                    "Vary": [
+                        "Origin"
+                    ],
+                    "Date": [
+                        "Sun, 10 Jan 2021 08:11:21 GMT"
+                    ],
+                    "Access-Control-Allow-Credentials": [
+                        "true"
+                    ],
+                    "Content-Length": [
+                        "1273"
+                    ],
+                    "Content-Type": [
+                        "application/json; charset=utf-8"
+                    ],
+                    "Strict-Transport-Security": [
+                        "max-age=15724800; includeSubDomains"
+                    ]
+                },
+                "body": {
+                    "string": "{\n  \"AAT\": [\n    {\n      \"t\": 1608786000,\n      \"o\": 28.19,\n      \"h\": 28.54,\n      \"l\": 27.94,\n      \"c\": 28.45,\n      \"v\": 54273\n    },\n    {\n      \"t\": 1609131600,\n      \"o\": 28.48,\n      \"h\": 29.17,\n      \"l\": 28.27,\n      \"c\": 28.92,\n      \"v\": 145484\n    },\n    {\n      \"t\": 1609218000,\n      \"o\": 28.85,\n      \"h\": 29.07,\n      \"l\": 27.97,\n      \"c\": 28.34,\n      \"v\": 109534\n    },\n    {\n      \"t\": 1609304400,\n      \"o\": 28.34,\n      \"h\": 28.81,\n      \"l\": 28.15,\n      \"c\": 28.34,\n      \"v\": 95933\n    },\n    {\n      \"t\": 1609390800,\n      \"o\": 28.17,\n      \"h\": 28.93,\n      \"l\": 28.09,\n      \"c\": 28.87,\n      \"v\": 66170\n    },\n    {\n      \"t\": 1609736400,\n      \"o\": 28.8,\n      \"h\": 29.21,\n      \"l\": 27.32,\n      \"c\": 27.41,\n      \"v\": 172181\n    },\n    {\n      \"t\": 1609822800,\n      \"o\": 27.44,\n      \"h\": 27.83,\n      \"l\": 27.24,\n      \"c\": 27.65,\n      \"v\": 147733\n    },\n    {\n      \"t\": 1609909200,\n      \"o\": 27.98,\n      \"h\": 29.06,\n      \"l\": 27.98,\n      \"c\": 28.74,\n      \"v\": 251691\n    },\n    {\n      \"t\": 1609995600,\n      \"o\": 28.68,\n      \"h\": 28.68,\n      \"l\": 27.72,\n      \"c\": 28.12,\n      \"v\": 113444\n    },\n    {\n      \"t\": 1610082000,\n      \"o\": 28.26,\n      \"h\": 28.3,\n      \"l\": 27.93,\n      \"c\": 28.22,\n      \"v\": 129538\n    }\n  ]\n}\n"
+                }
+            }
+        }
+    ]
+}
