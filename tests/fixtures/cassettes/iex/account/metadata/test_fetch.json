@@ -1,0 +1,82 @@
+{
+    "version": 1,
+    "interactions": [
+        {
+            "request": {
+                "method": "GET",
+                "uri": "https://cloud.iexapis.com/stable/account/metadata",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.25.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "iexcloud-messages-used": [
+                        "0"
+                    ],
+                    "Set-Cookie": [
+                        "ctoken=bebd07b9845f4670b0abc2f97be11db6; Max-Age=43200; Path=/; Expires=Wed, 20 Jan 2021 00:46:17 GMT"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Transfer-Encoding": [
+                        "chunked"
+                    ],
+                    "Content-Type": [
+                        "application/json; charset=utf-8"
+                    ],
+                    "Access-Control-Allow-Methods": [
+                        "GET, OPTIONS"
+                    ],
+                    "Server": [
+                        "nginx"
+                    ],
+                    "Access-Control-Allow-Origin": [
+                        "*"
+                    ],
+                    "Access-Control-Allow-Credentials": [
+                        "true"
+                    ],
+                    "Strict-Transport-Security": [
+                        "max-age=15768000"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ],
+                    "iexcloud-premium-messages-used": [
+                        "0"
+                    ],
+                    "Access-Control-Allow-Headers": [
+                        "Origin, X-Requested-With, Content-Type, Accept, Request-Source"
+                    ],
+                    "Date": [
+                        "Tue, 19 Jan 2021 12:46:18 GMT"
+                    ],
+                    "content-length": [
+                        "184"
+                    ]
+                },
+                "body": {
+                    "string": "{\"payAsYouGoEnabled\":true,\"effectiveDate\":1610265379000,\"subscriptionTermType\":\"monthly\",\"tierName\":\"grow\",\"messageLimit\":100000000,\"messagesUsed\":100000000,\"circuitBreaker\":200000000}"
+                }
+            }
+        }
+    ]
+}
