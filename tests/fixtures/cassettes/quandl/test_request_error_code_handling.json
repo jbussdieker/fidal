@@ -1,0 +1,72 @@
+{
+    "version": 1,
+    "interactions": [
+        {
+            "request": {
+                "method": "GET",
+                "uri": "https://www.quandl.com/api/v3/foo/bar",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.25.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 400,
+                    "message": "Bad Request"
+                },
+                "headers": {
+                    "Set-Cookie": [
+                        "visid_incap_2261005=QpAEoIpAS/KrlLC52zNly/LuCGAAAAAAQUIPAAAAAAC+3uXxjADWrIuT2B6T3jc+; expires=Thu, 20 Jan 2022 08:42:37 GMT; HttpOnly; path=/; Domain=.quandl.com; Secure; SameSite=None",
+                        "nlbi_2261005=wFboTo6AGh5DxUKkgSMXTwAAAACoQqtAOy8tnrpye96Mh4pH; path=/; Domain=.quandl.com; Secure; SameSite=None",
+                        "incap_ses_525_2261005=fEziR5nNASD69QbCBC1JB/LuCGAAAAAA6K5MqdBiuRCqBbHCiTL2Qw==; path=/; Domain=.quandl.com; Secure; SameSite=None"
+                    ],
+                    "X-Iinfo": [
+                        "7-3971110-3971123 NNYN CT(72 73 0) RT(1611198194565 179) q(0 0 1 -1) r(2 2) U11"
+                    ],
+                    "Server": [
+                        "openresty"
+                    ],
+                    "Content-Type": [
+                        "text/plain"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Date": [
+                        "Thu, 21 Jan 2021 03:03:15 GMT"
+                    ],
+                    "Allow": [
+                        "GET, HEAD, POST, PUT, DELETE, OPTIONS, PATCH"
+                    ],
+                    "Transfer-Encoding": [
+                        "chunked"
+                    ],
+                    "X-CDN": [
+                        "Incapsula"
+                    ],
+                    "Strict-Transport-Security": [
+                        "max-age=31536000; includeSubDomains"
+                    ],
+                    "content-length": [
+                        "116"
+                    ]
+                },
+                "body": {
+                    "string": "Error - QECx01 : We could not recognize the URL you requested: /api/v3/foo/bar. Please check your URL and try again."
+                }
+            }
+        }
+    ]
+}

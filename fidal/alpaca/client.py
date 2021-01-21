@@ -27,3 +27,5 @@ class Client:
             "APCA-API-SECRET-KEY": self.secret_key})
         self._validate_response(response)
         return response.json()
+
+client = Client()

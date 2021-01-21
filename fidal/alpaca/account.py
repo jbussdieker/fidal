@@ -1,4 +1,4 @@
-from fidal.alpaca.client import Client
+from fidal.alpaca.client import client
 
 def fetch():
-    return Client().request("account")
+    return client.request("account")

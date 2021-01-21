@@ -13,3 +13,10 @@ class TestIEXTimeSeries(unittest.TestCase):
             resp = fetch()
             self.assertEqual(len(resp), 92)
             mock_logging.assert_called_once_with("MESSAGES USED: 0")
+
+    @vcr.use_cassette()
+    def test_fetch_company(self):
+        with patch('logging.debug') as mock_logging:
+            resp = fetch("COMPANY", "AAPL")
+            self.assertEqual(len(resp), 1)
+            mock_logging.assert_called_once_with("MESSAGES USED: 1")

@@ -1,0 +1,111 @@
+{
+    "version": 1,
+    "interactions": [
+        {
+            "request": {
+                "method": "GET",
+                "uri": "https://www.quandl.com/api/v3/datatables/WIKI/PRICES.csv?qopts.export=true",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.25.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Content-Transfer-Encoding": [
+                        "binary"
+                    ],
+                    "Strict-Transport-Security": [
+                        "max-age=31536000; includeSubDomains; preload"
+                    ],
+                    "X-CDN": [
+                        "Incapsula"
+                    ],
+                    "X-RateLimit-Remaining": [
+                        "49999"
+                    ],
+                    "ETag": [
+                        "W/\"183d1557c29b9a460b8fae0886a30bbd\""
+                    ],
+                    "Server": [
+                        "openresty"
+                    ],
+                    "Content-Type": [
+                        "text/csv"
+                    ],
+                    "X-Request-Id": [
+                        "ee4144cb-e52c-4a5d-bcb9-18df1eb20616"
+                    ],
+                    "Date": [
+                        "Thu, 21 Jan 2021 03:00:24 GMT"
+                    ],
+                    "Set-Cookie": [
+                        "visid_incap_2261005=UOZdAvCNTVyNIW4lr7TaniDuCGAAAAAAQUIPAAAAAACBUe3AFczd6iHgalxtNPOM; expires=Thu, 20 Jan 2022 08:42:37 GMT; HttpOnly; path=/; Domain=.quandl.com; Secure; SameSite=None",
+                        "nlbi_2261005=2YLaZ/gld1rEymD8gSMXTwAAAAASV2A8B7wYs/G0+P4BWByt; path=/; Domain=.quandl.com; Secure; SameSite=None",
+                        "incap_ses_525_2261005=dpePacjuxyUpEgbCBC1JB0fuCGAAAAAAg7nJ8FbOAToLmUj4MRdlOA==; path=/; Domain=.quandl.com; Secure; SameSite=None"
+                    ],
+                    "Allow": [
+                        "GET, HEAD, POST, PUT, DELETE, OPTIONS, PATCH"
+                    ],
+                    "Referrer-Policy": [
+                        "origin-when-cross-origin"
+                    ],
+                    "Content-Disposition": [
+                        "attachment; filename=WIKI-PRICES-export-meta.csv"
+                    ],
+                    "X-RateLimit-Limit": [
+                        "50000"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "X-Iinfo": [
+                        "4-8706111-8706141 NNYN CT(73 151 0) RT(1611198023107 117) q(0 0 2 0) r(5 5) U2"
+                    ],
+                    "X-XSS-Protection": [
+                        "1; mode=block"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ],
+                    "Content-Security-Policy": [
+                        "frame-ancestors 'self';"
+                    ],
+                    "Transfer-Encoding": [
+                        "chunked"
+                    ],
+                    "Cache-Control": [
+                        "private"
+                    ],
+                    "X-Runtime": [
+                        "0.220338"
+                    ],
+                    "content-length": [
+                        "1624"
+                    ]
+                },
+                "body": {
+                    "string": "file.link,file.status,file.data_snapshot_time,datatable.last_refreshed_time\nhttps://quandl-production-datahub.s3.amazonaws.com/export/WIKI/PRICES/WIKI_PRICES_212b326a081eacca455e13140d7bb9db.zip?X-Amz-Expires=1800&X-Amz-Date=20210121T030024Z&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEMP//////////wEaCXVzLWVhc3QtMSJHMEUCIFJTvVGFOwTZbdkmtMWsmxpXyoQQ5LFTjstdEdlJHiOeAiEAj8U6WvOytV0PnI%2BJKmgke7Q9ZKc2d6shUDxJeR1/9XMqvQMIm///////////ARACGgwzMDYzMjA1MDAyMDQiDPP1E8fuyHrwpmOiViqRA9WeXfYCxKpV9c7lOV4GstXjIyZT0YUYTyNPG3B20JsjpdPccl1/a6lnS2AUm57v%2BSSumqAfEsf99W8uBZ7tL5AHHEYIC2vwz0CgA4HGeODi2Sam6rNEwGMM%2BAuhog97Gx6dfOnJIZwAXigKSTQTkrSB938mMIQY9fh9CgfZKELdYLEXtXflJCg7gJ6OqHtITUiSzbMtiCjSEpfDEDWSbVBw0lAkdJl/0ura2OIQmH87dADnRIPxYePZvvxbk7MwmfxBskhbEm6%2Bl9l2Cunynq40Tb8p8tzh8gDnxsNq4uiWgPm8IbS0wGkgCl22zn9yPlN008SnReURRAkEJs1SUaB1hfDG5LhheZPIHObbhjHp1184OF8qr6fhMJsLdJyit7kwdS0WYBDcfH5Wo4zSAWJasg9wZqVKRaq23c4f/Q5xRWFkzXi9jGcmvWB4qxOxqKtoAkBCOUFuJ5Alb4RG%2ByhZ3%2Bw82P7SmfnlfQC/e9VEM/bpeqeJPZ8OiATDUusGE7Fqcuufx2LNoywyFXOVJBNNMPHFo4AGOusB%2BT3u3gVDiWcSThKpCxXyYfPQDlpzxisZaX6K%2B69qwbGGvR6ObAkpuEfvWEh5RR8eHm9kXmMOIfExWJCKxtXcWFHlCQnIa9CRNMZlI0QU%2BohjoGE%2BMJAbPoBleSk%2Bo8rtYdPzWb2nVrm45FDs0ctewu216YTSxJ57UOOA3ev4mVAAbNxjn2C6Ar7spXYEh5YDU6c3V7CMSORp4VNwjm3Y3jtm2CWUd9pHmn1Vf4j8HXi/E8miIRnvg7z9oxn1CELHCZp/A4Bd1CWxDljucjsqOU8jO4H1SsQ5V/5SPl/fyGg5pQX5aGnmA7A9iQ%3D%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAUOUQ74XWA4BACYOG/20210121/us-east-1/s3/aws4_request&X-Amz-SignedHeaders=host&X-Amz-Signature=9be230110c73e4eb9ba37a23dc2576ecf4e4fc81cba7cc2cd2025d5eeebcc79c,fresh,2018-03-28 00:00:16 UTC,2018-03-27 23:54:20 UTC\n"
+                }
+            }
+        }
+    ]
+}

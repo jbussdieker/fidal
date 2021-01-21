@@ -1,4 +1,4 @@
-from fidal.iex.client import Client
+from fidal.iex.client import client
 
 def fetch():
-    return Client().request("account/metadata")
+    return client.request("account/metadata")

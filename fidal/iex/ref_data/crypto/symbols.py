@@ -1,4 +1,4 @@
-from fidal.iex.client import Client
+from fidal.iex.client import client
 
 def fetch():
-    return Client().request("ref-data/crypto/symbols")
+    return client.request("ref-data/crypto/symbols")

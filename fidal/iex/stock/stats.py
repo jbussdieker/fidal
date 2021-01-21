@@ -1,4 +1,4 @@
-from fidal.iex.client import Client
+from fidal.iex.client import client
 
 def fetch(symbols):
-    return Client().request("stock/market/stats", {"symbols": symbols})
+    return client.request("stock/market/stats", {"symbols": symbols})

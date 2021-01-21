@@ -25,3 +25,5 @@ class Client:
         response = self.session.get(url=url, params=params)
         self._validate_response(response)
         return response
+
+client = Client()

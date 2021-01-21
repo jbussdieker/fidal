@@ -1,0 +1,82 @@
+{
+    "version": 1,
+    "interactions": [
+        {
+            "request": {
+                "method": "GET",
+                "uri": "https://cloud.iexapis.com/stable/time-series/COMPANY/AAPL",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.25.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Cookie": [
+                        "ctoken=da97a8645b824c72aa6bcaee0ba6b7c5"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Content-Type": [
+                        "application/json; charset=utf-8"
+                    ],
+                    "Access-Control-Allow-Origin": [
+                        "*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Strict-Transport-Security": [
+                        "max-age=15768000"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ],
+                    "iexcloud-messages-used": [
+                        "1"
+                    ],
+                    "Date": [
+                        "Thu, 21 Jan 2021 02:56:06 GMT"
+                    ],
+                    "iexcloud-premium-messages-used": [
+                        "0"
+                    ],
+                    "Access-Control-Allow-Headers": [
+                        "Origin, X-Requested-With, Content-Type, Accept, Request-Source"
+                    ],
+                    "Server": [
+                        "nginx"
+                    ],
+                    "Access-Control-Allow-Credentials": [
+                        "true"
+                    ],
+                    "Access-Control-Allow-Methods": [
+                        "GET, OPTIONS"
+                    ],
+                    "Transfer-Encoding": [
+                        "chunked"
+                    ],
+                    "content-length": [
+                        "629"
+                    ]
+                },
+                "body": {
+                    "string": "[{\"address\":\"1 Apple Park Way\",\"address2\":null,\"ceo\":\"Timothy Cook\",\"city\":\"Cupertino\",\"companyName\":\"Apple Inc\",\"country\":\"US\",\"employees\":null,\"exchange\":\"NASDAQ/NGS (GLOBAL SELECT MARKET)\",\"exchangeCode\":null,\"industry\":\"Electronic Computer Manufacturing \",\"issuetype\":\"cs\",\"longDescription\":null,\"marketcap\":null,\"phone\":\"14089961010\",\"primarySicCode\":\"3571\",\"sector\":\"Manufacturing\",\"securityName\":null,\"securityType\":\"cs\",\"shortDescription\":null,\"state\":\"California\",\"symbol\":\"AAPL\",\"website\":\"https://www.apple.com/\",\"zip\":\"95014-0642\",\"id\":\"COMPANY\",\"key\":\"AAPL\",\"subkey\":\"\",\"date\":1611187200000,\"updated\":1611195113000}]"
+                }
+            }
+        }
+    ]
+}

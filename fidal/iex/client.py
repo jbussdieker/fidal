@@ -33,3 +33,5 @@ class Client:
         self._log_messages(response)
         self._validate_response(response)
         return response.json()
+
+client = Client()
