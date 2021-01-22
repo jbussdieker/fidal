@@ -1,0 +1,73 @@
+{
+    "version": 1,
+    "interactions": [
+        {
+            "request": {
+                "method": "GET",
+                "uri": "https://cloud.iexapis.com/stable/ref-data/iex/symbols",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.25.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 403,
+                    "message": "Forbidden"
+                },
+                "headers": {
+                    "Content-Type": [
+                        "text/html; charset=utf-8"
+                    ],
+                    "Server": [
+                        "nginx"
+                    ],
+                    "Transfer-Encoding": [
+                        "chunked"
+                    ],
+                    "Strict-Transport-Security": [
+                        "max-age=15768000"
+                    ],
+                    "Access-Control-Allow-Credentials": [
+                        "true"
+                    ],
+                    "Access-Control-Allow-Origin": [
+                        "*"
+                    ],
+                    "Set-Cookie": [
+                        "ctoken=151d0c5b9b654e7bbdecdfd49e1fb765; Max-Age=43200; Path=/; Expires=Fri, 22 Jan 2021 23:29:59 GMT"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Access-Control-Allow-Headers": [
+                        "Origin, X-Requested-With, Content-Type, Accept, Request-Source"
+                    ],
+                    "Access-Control-Allow-Methods": [
+                        "GET, OPTIONS"
+                    ],
+                    "Date": [
+                        "Fri, 22 Jan 2021 11:29:59 GMT"
+                    ],
+                    "content-length": [
+                        "34"
+                    ]
+                },
+                "body": {
+                    "string": "The API key provided is not valid."
+                }
+            }
+        }
+    ]
+}

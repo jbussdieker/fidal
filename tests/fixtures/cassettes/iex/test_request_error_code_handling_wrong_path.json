@@ -27,8 +27,17 @@
                     "message": "Not Found"
                 },
                 "headers": {
-                    "Access-Control-Allow-Headers": [
-                        "Origin, X-Requested-With, Content-Type, Accept, Request-Source"
+                    "Access-Control-Allow-Methods": [
+                        "GET, OPTIONS"
+                    ],
+                    "Date": [
+                        "Fri, 22 Jan 2021 11:31:20 GMT"
+                    ],
+                    "Set-Cookie": [
+                        "ctoken=82fed4802e1a4cbe909a1229dadecc99; Max-Age=43200; Path=/; Expires=Fri, 22 Jan 2021 23:31:20 GMT"
+                    ],
+                    "Access-Control-Allow-Origin": [
+                        "*"
                     ],
                     "Connection": [
                         "keep-alive"
@@ -36,29 +45,20 @@
                     "Access-Control-Allow-Credentials": [
                         "true"
                     ],
-                    "Content-Type": [
-                        "text/html; charset=utf-8"
-                    ],
-                    "Date": [
-                        "Wed, 06 Jan 2021 22:14:20 GMT"
-                    ],
                     "Strict-Transport-Security": [
                         "max-age=15768000"
                     ],
-                    "Access-Control-Allow-Methods": [
-                        "GET, OPTIONS"
+                    "Content-Type": [
+                        "text/html; charset=utf-8"
                     ],
-                    "Set-Cookie": [
-                        "ctoken=3a438684c7774980b0a18851e3b0b8be; Max-Age=43200; Path=/; Expires=Thu, 07 Jan 2021 10:14:20 GMT"
-                    ],
-                    "Transfer-Encoding": [
-                        "chunked"
-                    ],
-                    "Access-Control-Allow-Origin": [
-                        "*"
+                    "Access-Control-Allow-Headers": [
+                        "Origin, X-Requested-With, Content-Type, Accept, Request-Source"
                     ],
                     "Server": [
                         "nginx"
+                    ],
+                    "Transfer-Encoding": [
+                        "chunked"
                     ],
                     "content-length": [
                         "9"

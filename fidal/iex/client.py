@@ -24,7 +24,7 @@ class Client:
 
     def _validate_response(self, response):
         if response.status_code != requests.codes.ok:
-            raise Exception("Error Response")
+            raise Exception("Error Response", response.text)
 
     def request(self, endpoint, params={}):
         params.update({"token": self.token})

@@ -1,0 +1,73 @@
+{
+    "version": 1,
+    "interactions": [
+        {
+            "request": {
+                "method": "GET",
+                "uri": "https://cloud.iexapis.com/stable/stock/market/company?symbols=FOOBARSTOCK",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.25.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 404,
+                    "message": "Not Found"
+                },
+                "headers": {
+                    "Set-Cookie": [
+                        "ctoken=f4cc91314eb04de0bfe25e8e61d9545b; Max-Age=43200; Path=/; Expires=Fri, 22 Jan 2021 23:37:08 GMT"
+                    ],
+                    "Date": [
+                        "Fri, 22 Jan 2021 11:37:08 GMT"
+                    ],
+                    "Access-Control-Allow-Headers": [
+                        "Origin, X-Requested-With, Content-Type, Accept, Request-Source"
+                    ],
+                    "Server": [
+                        "nginx"
+                    ],
+                    "Transfer-Encoding": [
+                        "chunked"
+                    ],
+                    "Content-Type": [
+                        "text/html; charset=utf-8"
+                    ],
+                    "Strict-Transport-Security": [
+                        "max-age=15768000"
+                    ],
+                    "Access-Control-Allow-Methods": [
+                        "GET, OPTIONS"
+                    ],
+                    "Access-Control-Allow-Origin": [
+                        "*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Access-Control-Allow-Credentials": [
+                        "true"
+                    ],
+                    "content-length": [
+                        "14"
+                    ]
+                },
+                "body": {
+                    "string": "Unknown symbol"
+                }
+            }
+        }
+    ]
+}
